@@ -1,0 +1,10 @@
+.container {
+                    background-image: url('../images/bg_4.jpg');
+                    /* width: 100% !important; */
+                    background-repeat: no-repeat;
+                    height: 600px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+}
