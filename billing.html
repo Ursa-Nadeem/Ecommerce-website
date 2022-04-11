@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-                    <meta charset="UTF-8">
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                    <!-- style -->
-                    <link rel="stylesheet" href="css/billing.css">
 
-                    <title>Billing</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/billing.css">
+
+    <title>Billing</title>
 </head>
+
 <body>
-                    <div class="container">
-                                        <form action="" method="POST" id="address-form">
-                                          <fieldset>
-                                            <legend>Shipping Address</legend>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" name="shipping-first-name" id="shipping-first-name" required>
-                                              <label for="shipping-first-name">First Name</label>
-                                            </p>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" name="shipping-last-name" id="shipping-last-name" required>
-                                              <label for="shipping-last-name">Last Name</label>
-                                            </p>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" name="shipping-street-address" id="shipping-street-address" required>
-                                              <label for="shipping-street-address">Street Address</label>
-                                            </p>
-                                            <p class="input-wrapper lg-third">
-                                              <input type="text" name="shipping-apt-address" id="shipping-apt-address">
-                                              <label for="shipping-apt-address">Apt/Suite</label>
-                                            </p>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" name="shipping-city" id="shipping-city" required>
-                                              <label for="shipping-city">City</label>
-                                            </p>
-                                            <p class="input-wrapper lg-third">
-                                              <input type="text" name="shipping-postal-code" id="shipping-postal-code" required>
-                                              <label for="shipping-postal-code">Zip/Postal Code</label>
-                                            </p>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" id="shipping-country" list="shipping-country-list" name="shipping-country" required>
-                                              <datalist id="shipping-country-list">
+    <div class="container">
+        <form action="" method="POST" id="address-form">
+            <fieldset>
+                <legend>Shipping Address</legend>
+                <p class="input-wrapper lg-half">
+                    <input type="text" name="shipping-first-name" id="shipping-first-name" required>
+                    <label for="shipping-first-name">First Name</label>
+                </p>
+                <p class="input-wrapper lg-half">
+                    <input type="text" name="shipping-last-name" id="shipping-last-name" required>
+                    <label for="shipping-last-name">Last Name</label>
+                </p>
+                <p class="input-wrapper lg-half">
+                    <input type="text" name="shipping-street-address" id="shipping-street-address" required>
+                    <label for="shipping-street-address">Street Address</label>
+                </p>
+                <p class="input-wrapper lg-third">
+                    <input type="text" name="shipping-apt-address" id="shipping-apt-address">
+                    <label for="shipping-apt-address">Apt/Suite</label>
+                </p>
+                <p class="input-wrapper lg-half">
+                    <input type="text" name="shipping-city" id="shipping-city" required>
+                    <label for="shipping-city">City</label>
+                </p>
+                <p class="input-wrapper lg-third">
+                    <input type="text" name="shipping-postal-code" id="shipping-postal-code" required>
+                    <label for="shipping-postal-code">Zip/Postal Code</label>
+                </p>
+                <p class="input-wrapper lg-half">
+                    <input type="text" id="shipping-country" list="shipping-country-list" name="shipping-country" required>
+                    <datalist id="shipping-country-list">
                                                 <option value="Afghanistan - AF">
                                                 <option value="Albania - AL">
                                                 <option value="Algeria - DZ">
@@ -280,39 +282,39 @@
                                                 <option value="Zambia - ZM">
                                                 <option value="Zimbabwe - ZW">
                                               </datalist>
-                                              <label for="shipping-country">Country</label></p>
-                                          </fieldset>
-                                          <input type="checkbox" name="" id="same-address">
-                                          <label for="same-address">Billing Address is the Same as Shipping</label>
-                                          <fieldset>
-                                            <legend>Billing Address</legend>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" name="billing-first-name" id="billing-first-name" required>
-                                              <label for="billing-first-name">First Name</label>
-                                            </p>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" name="billing-last-name" id="billing-last-name" required>
-                                              <label for="billing-last-name">Last Name</label>
-                                            </p>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" name="billing-street-address" id="billing-street-address" required>
-                                              <label for="billing-street-address">Street Address</label>
-                                            </p>
-                                            <p class="input-wrapper lg-third">
-                                              <input type="text" name="billing-apt-address" id="billing-apt-address">
-                                              <label for="billing-apt-address">Apt/Suite</label>
-                                            </p>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" name="billing-city" id="billing-city" required>
-                                              <label for="billing-city">City</label>
-                                            </p>
-                                            <p class="input-wrapper lg-third">
-                                              <input type="text" name="billing-postal-code" id="billing-postal-code" required>
-                                              <label for="billing-postal-code">Zip/Postal Code</label>
-                                            </p>
-                                            <p class="input-wrapper lg-half">
-                                              <input type="text" id="billing-country" list="billing-country-list" name="billing-country" required>
-                                              <datalist id="billing-country-list">
+                    <label for="shipping-country">Country</label></p>
+            </fieldset>
+            <input type="checkbox" name="" id="same-address">
+            <label for="same-address">Billing Address is the Same as Shipping</label>
+            <fieldset>
+                <legend>Billing Address</legend>
+                <p class="input-wrapper lg-half">
+                    <input type="text" name="billing-first-name" id="billing-first-name" required>
+                    <label for="billing-first-name">First Name</label>
+                </p>
+                <p class="input-wrapper lg-half">
+                    <input type="text" name="billing-last-name" id="billing-last-name" required>
+                    <label for="billing-last-name">Last Name</label>
+                </p>
+                <p class="input-wrapper lg-half">
+                    <input type="text" name="billing-street-address" id="billing-street-address" required>
+                    <label for="billing-street-address">Street Address</label>
+                </p>
+                <p class="input-wrapper lg-third">
+                    <input type="text" name="billing-apt-address" id="billing-apt-address">
+                    <label for="billing-apt-address">Apt/Suite</label>
+                </p>
+                <p class="input-wrapper lg-half">
+                    <input type="text" name="billing-city" id="billing-city" required>
+                    <label for="billing-city">City</label>
+                </p>
+                <p class="input-wrapper lg-third">
+                    <input type="text" name="billing-postal-code" id="billing-postal-code" required>
+                    <label for="billing-postal-code">Zip/Postal Code</label>
+                </p>
+                <p class="input-wrapper lg-half">
+                    <input type="text" id="billing-country" list="billing-country-list" name="billing-country" required>
+                    <datalist id="billing-country-list">
                                                 <option value="Afghanistan - AF">
                                                 <option value="Albania - AL">
                                                 <option value="Algeria - DZ">
@@ -550,10 +552,11 @@
                                                 <option value="Zambia - ZM">
                                                 <option value="Zimbabwe - ZW">
                                               </datalist>
-                                              <label for="billing-country">Country</label></p>
-                                          </fieldset>
-                                          <p class="submit-wrap"><button class="btn" style="margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">CheckOut &rarr;</button></p>
-                                        </form>
-                                      </div>             
+                    <label for="billing-country">Country</label></p>
+            </fieldset>
+            <p class="submit-wrap"><button class="btn" style="margin-left:auto;margin-right:auto;display:block;margin-bottom:0%">CheckOut &rarr;</button></p>
+        </form>
+    </div>
 </body>
+
 </html>
