@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 300px;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../images/banner.jpg');
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+ } 
+.text-box{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.text-box h1{
+    color: white;
+}
+.container{
+    height: 50vh;
+}
