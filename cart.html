@@ -14,7 +14,7 @@
     <div class='Cart-Container'>
         <div class='Header'>
             <h3 class='Heading'>Shopping Cart</h3>
-            <h5 class='Action'>Remove all</h5>
+
         </div>
 
 
@@ -24,21 +24,27 @@
                 <a href="#" style="text-decoration: none;">
                     <h3 class='title'>
                         <i style="padding-right: 20px; " class="fa fa-trash-o" aria-hidden="true">
-</i><span style="color: lightblue">Catalyzer</span></h3>
+                        </i><span style="color: lightblue" id="titleget"></span>
+                    </h3>
                 </a>
             </div>
             '
             <div class='counter' style="margin-bottom: 40px;">
 
-                <div class='btn'>+</div>
-                <div class='count'>2</div>
-                <div class='btn'>-</div>
+                <div class='btn' onclick="increament()">+</div>
+                <div class='count'>
+                    <input type="text" id="textbox" value="1" style="width: 15px;">
+                </div>
+                <div class='btn' onclick="decreament()">-</div>
 
             </div>
             <div class='prices'>
-                <div class='amount'>$2.99</div>
-                <div class='save'><u>Save for later</u></div>
-                <div class='remove'><u>Remove</u></div>
+                <span>
+                    $ <span class='amount' id="itemprice">0</span>
+                </span>
+                <!-- $<div class='amount' id="itemprice"><span>$</span>0</div> -->
+
+                <!-- <div class='remove'><u>Remove</u></div> -->
             </div>
         </div>
 
@@ -47,7 +53,7 @@
             <div class='total'>
                 <div>
                     <div class='Subtotal'>Sub-Total</div>
-                    <div class='items'>2 items</div>
+                    <div class='items'></div>
                 </div>
                 <div class='total-amount'>$5.99</div>
             </div>
@@ -58,6 +64,9 @@
 
 
     </div>
+
+
+    <script src="./js/cart.js"></script>
 
 </body>
 
