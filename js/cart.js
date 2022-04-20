@@ -1,3 +1,5 @@
+
+const product_total_amount = document.getElementById("total_amount");
 const decreament = () => {
 
     var itemval = document.getElementById("textbox");
@@ -22,6 +24,7 @@ const decreament = () => {
             let b = i.price;
             let c = a * b;
             itemprice.innerHTML = c;
+            product_total_amount.innerHTML = c;
         })
     }
 }
@@ -38,29 +41,47 @@ const increament = () => {
     else {
         let products = localStorage.getItem("products");
         const parsearr = JSON.parse(products)
+        let sum;
         parsearr.map((i) => {
             document.getElementById("titleget").innerHTML = i.title;
             document.getElementById("itemprice").innerHTML = i.price;
             itemval.value = parseInt(itemval.value) + 1;
+            let tprice = itemval.value * i.price
             itemprice.innerHTML = itemval.value * i.price;
 
+            console.log(tprice)
+
+            product_total_amount.innerHTML = tprice;
+
         })
+
 
     }
 }
 
-// localStorage
+// localStorage  delete
+const delete_product = (itemIndex) => {
+    const product = localStorage.getItem("products");
+    let parsearr = JSON.parse(product);
+
+    parsearr.splice(itemIndex, 1);
+    localStorage.setItem('products', JSON.stringify(parsearr));
+}
+
+// Add
 
 const product = localStorage.getItem("products");
 const parsearr = JSON.parse(product);
-console.log(parsearr)
 parsearr.map((i) => {
-    console.log(i.title);
-    document.getElementById("titleget").innerHTML = i.title;
-    document.getElementById("itemprice").innerHTML = i.price;
+    let cart=document.getElementById("titleget")
+    let li=document.createElement('li')
+    let text=document.createTextNode(i.title)
+    li.appendChild(text)
+    cart.appendChild(li)
 })
 
 
-const delete_product = () => {
 
-}
+
+
+

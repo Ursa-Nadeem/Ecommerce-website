@@ -1,4 +1,4 @@
-function register() {
+function login() {
     let email, psw;
     email = document.getElementById("email").value;
     psw = document.getElementById("psw").value;
@@ -6,17 +6,13 @@ function register() {
     let user_records = new Array();
     user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
     if (user_records.some((v) => {
-            return v.email == email
-        })) {
-        alert("duplicate data \n You have already Signed Up");
+        return v.email == email && v.psw
+    })) {
+        alert("logged in");
+        window.location.href = "home.html"
 
     } else {
-        user_records.push({
-            "email": email,
-            "psw": psw
-        })
-        localStorage.setItem("users", JSON.stringify(user_records));
-        alert("Account has been created!! \n Please Sign In Using the Link below.")
+        alert("Incorect email or password!!")
     }
 
 }
