@@ -73,11 +73,15 @@ const delete_product = (itemIndex) => {
 const product = localStorage.getItem("products");
 const parsearr = JSON.parse(product);
 parsearr.map((i) => {
-    let cart=document.getElementById("titleget")
-    let li=document.createElement('li')
-    let text=document.createTextNode(i.title)
-    li.appendChild(text)
-    cart.appendChild(li)
+    let cart=document.getElementById("titleget");
+    let heading=document.createElement('h5');
+    let text=document.createTextNode(i.title);
+    let icon=document.createElement("i");
+    icon.setAttribute("class","fa fa-trash-o")
+    icon.setAttribute("onclick","delete_product(this)")
+    heading.appendChild(icon)
+    heading.appendChild(text)
+    cart.appendChild(heading);
 })
 
 
