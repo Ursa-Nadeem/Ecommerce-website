@@ -1,28 +1,30 @@
-*{
-margin: 0%;
-padding: 0%;
+* {
+    margin: 0%;
+    padding: 0%;
 }
 
-#header .navbar-nav .nav-item .nav-link{
-color: black;
-padding: 0.5rem 1rem;
-text-align: center;
+#header .navbar-nav .nav-item .nav-link {
+    color: black;
+    padding: 0.5rem 1rem;
+    text-align: center;
 }
+
 #header .navbar-nav .nav-item .nav-link:hover,
-#header .navbar-nav .nav-item .nav-link.active{
-color: red;
+#header .navbar-nav .nav-item .nav-link.active {
+    color: red;
 
 }
-#header .navbar-toggler-icon{
- width: unset;
- height: unset;
+
+#header .navbar-toggler-icon {
+    width: unset;
+    height: unset;
+}
+
+#color:hover {
+    color: orangered;
 }
 
 /* footer */
 
 
 /* shop page */
-
-
-
-
