@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cart.css"> :
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>cart</title>
 </head>
@@ -14,57 +14,33 @@
     <div class='Cart-Container'>
         <div class='Header'>
             <h3 class='Heading'>Shopping Cart</h3>
-
         </div>
-
 
         <div class='Cart-Items'>
             <div class='about'>
-
                 <a href="cart.html" style="text-decoration: none;">
-                    <h3 class='title' id="cart_details">
-                       
+                    <h3 class='title'>
                         <span style="color: lightblue" id="titleget"></span>
                     </h3>
                 </a>
-            </div>
 
-            <div class='counter' style="margin-bottom: 40px;">
+                <hr>
 
-                <div class='btn' onclick="increament()">+</div>
-                <div class='count'>
-                    <input type="text" id="textbox" value="1" style="width: 15px;">
+                <div class='checkout'>
+                    <div class='total'>
+                        <div>
+                            <div class='Subtotal'>Sub-Total</div>
+                            <div class='items'></div>
+                        </div>
+                        <div class='total-amount' id="total_amount">00</div>
+                    </div>
+                    <a href="billing.html"><button class='button'>Checkout</button></a>
+                    <a href="shop.html"><button class="button">Continue shopping</button></a>
                 </div>
-                <div class='btn' onclick="decreament()">-</div>
-
             </div>
-            <div class='prices'>
-                <span>
-                    $ <span class='amount' id="itemprice">0</span>
-                </span>
-                <!-- $<div class='amount' id="itemprice"><span>$</span>0</div> -->
-
-                <!-- <div class='remove'><u>Remove</u></div> -->
-            </div>
-        </div>
-
-        <hr>
-        <div class='checkout'>
-            <div class='total'>
-                <div>
-                    <div class='Subtotal'>Sub-Total</div>
-                    <div class='items'></div>
-                </div>
-                <div class='total-amount' id="total_amount">0</div>
-            </div>
-            <button class='button'>Checkout</button>
-            <a href="Shop.html"><button class='button'>Continue Shopping</button></a>
         </div>
     </div>
 
-
-
-    </div>
 
 
     <script src="./js/cart.js"></script>
